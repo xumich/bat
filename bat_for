@@ -1,0 +1,9 @@
+@echo off
+set JAVA_HOME=D:\..
+::echo %JAVA_HOME%  打印JAVA_HOME
+for %%i in (w,e,r,te,w) do (
+  for %%n in (t1,t2,t3,t4) do (
+    echo %%i %%n
+    call "test-client.bat" submit --host= --port= --orchestration= --parameter=
+  )
+)
