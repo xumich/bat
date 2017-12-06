@@ -1,0 +1,14 @@
+@echo off
+rem 键盘输入
+set /p option=please enter the option[y/n?]:%=%
+echo %option%
+
+set /a sum=1+1
+echo %sum%
+echo 替换变量值的内容 语法：set newVar="oldVar:str1=str2%
+set old=bbs.very
+echo old string is:%old%
+set new=%old:bbs=aaa%
+echo new string is:%new%
+
+echo 字符串截取 echo 1、%Var:~start,len% pause
